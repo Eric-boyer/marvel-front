@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+* {
+  margin: 0 auto;
+  max-width: 0 auto;
+  max-height: 0 auto;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-color: rgb(25, 22, 22);
+  max-width: 0 auto;
+  height: 92px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inside-header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row-reverse;
+  max-width: 0 auto;
+  height: 54px;
+
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.second-block-inside1 {
+  border: rgb(139, 136, 136) solid 1px;
+  flex-grow: 2;
+}
+.second-block-insid2 {
+  border: rgb(139, 136, 136) solid 1px;
+
+  flex-grow: 1;
+}
+.second-block-inside3 {
+  border: rgb(139, 136, 136) solid 1px;
+  flex-grow: 1;
+}
+.second-block-inside4 {
+  border: rgb(139, 136, 136) solid 1px;
+
+  flex-grow: 4;
+}
+.second-block-inside5 {
+  border: rgb(139, 136, 136) solid 1px;
+  flex-grow: 1;
+}
+.second-block-inside6 {
+  border: rgb(139, 136, 136) solid 1px;
+  flex-grow: 2;
+}
+.Marvel {
+  max-height: 100%;
+  padding-left: 42%;
+}
+.Button-sign {
+  color: white;
+  font-size: 73%;
+  padding-top: 10%;
+  padding-left: 32%;
+  font-style: inherit;
+}
+.submit-button {
+  color: white;
+  font-size: 73%;
+  padding-top: 7%;
+  padding-left: 27%;
+  font-style: inherit;
+}
+.submit-button2 {
+  color: white;
+  margin-left: 37%;
+  font-size: 63%;
+}
+.button-container {
+  max-width: 36%;
+  height: 35%;
+
+  display: flex;
+}
+.b {
+  padding-top: 2%;
+  color: white;
+  font-size: 77%;
+}
+.container-character {
+  max-width: 1213px;
+  max-height: 0 auto;
+  border: chartreuse solid 2px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.steve-jobs {
+  height: 500px;
+  max-width: 255px;
+  border: red solid 2px;
+  background-color:black;
+  margin-top: 3%;
+
+}
+.character-image {
+  width: 100%;
+ height: 60%;
+}
+.description {
+  height: 5px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title{
+    color: white;
 }
