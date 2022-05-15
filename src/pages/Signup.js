@@ -6,7 +6,7 @@ const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [newsletter, setNewsletter] = useState(false);
-  const [errorMessage, setErrorMessage] = useState("");
+ // const [errorMessage, setErrorMessage] = useState("");
 
     return <div className="box-container">
     
@@ -46,7 +46,7 @@ const Signup = () => {
       />
     <br />
     <input type="submit" value="S'incrire" />
-    <h2 style={{ color: "white" }}>{errorMessage}</h2>
+    {/* <h2 style={{ color: "white" }}></h2> */}
   </form>
   </div>
 }

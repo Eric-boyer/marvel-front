@@ -14,7 +14,7 @@ const Header = () => {
        <Link to="/signup"><p className="submit-button2" >SUBSCRIRE</p></Link> 
         </div>
         <div className="second-block-inside4">
-          <img className="Marvel" src={Marvel} alt=""></img>
+         <Link to="/"><img className="Marvel" src={Marvel} alt=""></img></Link> 
         </div>
         <div className="second-block-inside5">
         

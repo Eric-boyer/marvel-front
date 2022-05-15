@@ -5,6 +5,8 @@ import axios from "axios";
 const Charactere = () => {
   const [data, setData] = useState();
   const [isloading, setIsloading] = useState(true);
+ 
+ 
   const id = useParams();
   const test = id.charactereId
   
@@ -30,6 +32,8 @@ const Charactere = () => {
   return isloading === true ? (
     <div>En cours de chargement...</div>
   ) : (
+    <>
+     
     <div className="container-character">{data&&data.comics.map((comic, index)=>{
 console.log(comic);
 return <div className="steve-jobs" key={index}>
@@ -42,8 +46,10 @@ return <div className="steve-jobs" key={index}>
               <div className="description">{comic.description}</div>
             </>
           </div>
-
-    })}</div>
+         
+    })}
+    </div>
+    </>
   );
 };
 
