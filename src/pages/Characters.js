@@ -78,7 +78,7 @@ const Characters = () => {
                 <h4 className="title">{character.name}</h4>
                 <>
                   <div className="description">{character.description}</div>
-                  <i className="fa-solid fa-heart"></i>
+                 
                 </>
               </div>
             </Link>

@@ -1,7 +1,8 @@
 // imports routes
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Cookies from "js-cookie";
+
+
 
 // imports pages
 import Comics from "./pages/Comics";
@@ -16,6 +17,7 @@ import Login from "./pages/Login";
 import Header from "./components/Header";
 
 function App() {
+
  
   return (
     <Router>
@@ -27,7 +29,7 @@ function App() {
         <Route path="/comics/:charactereId" element={<Charactere />} />
         <Route path="/favoris" element={<Favoris />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<Login  />} />
       </Routes>
     </Router>
   );

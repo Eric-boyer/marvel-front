@@ -102,6 +102,8 @@
   transition: all 0.3s;
   border-radius: 4%;
   margin-top:33px;
+  box-shadow: 3px 3px 3px 3px rgb(223, 23, 23);
+  box-shadow: [horizontal offset]
 }
 .steve-jobs:hover {
   transform: scale(1.1);
@@ -195,4 +197,13 @@
      Arial, sans-serif;
      font-size: 13px;
      margin-top: 3px;
+}
+
+.box-container{
+    max-width: 320px;
+    display: flex;
+    justify-content: center;
+    height: 356px;
+margin-top: 10%;
+
 }
