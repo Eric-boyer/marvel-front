@@ -1,4 +1,4 @@
-import {  useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import Marvel from "../img/Marvel.png";
 const Header = () => {
@@ -6,23 +6,24 @@ const Header = () => {
   return (
     <div className="header">
       <form className="inside-header">
-        <div className="second-block-inside1"> sfsdsq</div>
+        <div className="second-block-inside1"> </div>
         
         <div className="second-block-inside3">
             <h3 className="submit-button">
          <strong >MARVEL</strong>  <strong>UNLIMITED</strong></h3>
-         <p className="submit-button2" >SUBSCRIRE</p>
+       <Link to="/signup"><p className="submit-button2" >SUBSCRIRE</p></Link> 
         </div>
         <div className="second-block-inside4">
           <img className="Marvel" src={Marvel} alt=""></img>
         </div>
         <div className="second-block-inside5">
         
-          <h3 className="Button-sign">
+          <Link to="/login"><h3 className="Button-sign">
             <strong >SIGN IN</strong> | <strong>JOIN</strong>
-          </h3>
-        </div>
-        <div className="second-block-inside6">qjhdvhjqsb</div>
+          </h3> </Link>
+          </div>
+        
+        <div className="second-block-inside6"></div>
       </form>
       <div className="button-container">
           <span className="b" onClick={()=>{

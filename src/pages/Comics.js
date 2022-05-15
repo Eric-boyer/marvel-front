@@ -35,7 +35,7 @@ const Comics = () => {
         MARVEL COMICS
     </strong>
     <div className="Marvel-picture-container">
-    <img className="picture-marvel" src={Marvel1}>
+    <img className="picture-marvel" src={Marvel1} alt="">
         
     </img>
     </div>

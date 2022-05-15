@@ -55,6 +55,7 @@
   padding-top: 10%;
   padding-left: 32%;
   font-style: inherit;
+  cursor: pointer;
 }
 .submit-button {
   color: white;
@@ -62,6 +63,7 @@
   padding-top: 7%;
   padding-left: 27%;
   font-style: inherit;
+  cursor: pointer;
 }
 .submit-button2 {
   color: white;

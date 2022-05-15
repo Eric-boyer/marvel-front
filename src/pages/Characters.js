@@ -43,7 +43,7 @@ const Characters = () => {
         MARVEL CHARACTERS
     </strong>
     <div className="Marvel-picture-container">
-    <img className="picture-marvel" src={MarvelStudios}>
+    <img className="picture-marvel" src={MarvelStudios} alt="">
         
     </img>
     
