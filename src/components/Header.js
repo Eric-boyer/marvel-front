@@ -27,7 +27,7 @@ const Header = () => {
       <div className="button-container">
           <span className="b" onClick={()=>{
               navigate("favoris")
-          }}><strong>Favoris</strong></span>
+          }}><strong>FAVORIS</strong></span>
           <span className="b" onClick={()=>{
               navigate("/characters")
           }}><strong>CHARACTERS</strong></span>

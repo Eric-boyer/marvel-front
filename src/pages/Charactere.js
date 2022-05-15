@@ -6,16 +6,18 @@ const Charactere = () => {
   const [data, setData] = useState();
   const [isloading, setIsloading] = useState(true);
   const id = useParams();
+  const test = id.charactereId
+  
 
   useEffect(() => {
     const fetchdata = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4000/comics/${id.charactereId}`
+          `https://marvel-backend-eric.herokuapp.com/comics/${test}`
         );
-       console.log(id.charactereId)
+       //console.log(id.charactereId)
         setData(response.data);
-        console.log(data);
+       // console.log(data);
         setIsloading(false);
       } catch (error) {
         console.log(error.response.data);
@@ -23,14 +25,14 @@ const Charactere = () => {
     };
 
     fetchdata();
-  }, [id.charactereId]);
+  }, [test]);
 
   return isloading === true ? (
     <div>En cours de chargement...</div>
   ) : (
     <div className="container-character">{data&&data.comics.map((comic, index)=>{
 console.log(comic);
-return <div className="steve-jobs">
+return <div className="steve-jobs" key={index}>
             <img className="character-image"
               src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
               alt=""

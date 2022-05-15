@@ -1,26 +1,31 @@
-const Button = ({ page, setPage, count, limit, setSkip }) => {
-  const numberOfPage = count / limit;
+const Button = ({data, page, setPage, count, limit, setSkip }) => {
+  const numberOfPage = Math.ceil(data.count / data.limit);
 
   return (
     <div className="Button-container">
       <button
-        className="button"
-        disabbled={page === 1 && true}
+        className="button-pagination"
+        disabled={page === 1 && true}
         onClick={() => {
-          setSkip((prevState) => prevState - limit);
+          setSkip((previousState) => previousState - data.limit);
           setPage((prevState) => prevState - 1);
         }}
-      > 
-        page suivante{" "}
+      >
+        page precedente
       </button>
-      <span>Page:{page}/{Math.floor(count/limit)}</span>
-      <button className="button"
-       disabled ={page>Math.floor(numberOfPage)&& true}
-       onClick={()=>{
-           setSkip((prevState)=>prevState+limit);
-           setPage((prevState)=>prevState+1)
-       }}
-       > page precedente </button>
+      <span className="span-between">
+        Page:{page}/{numberOfPage}
+      </span>
+      <button
+        className="button-pagination"
+        disabled={page === (numberOfPage) && true}
+        onClick={() => {
+          setSkip((previousState) => previousState + data.limit);
+          setPage((prevState) => prevState + 1);
+        }}
+      >
+        page suivante
+      </button>
     </div>
   );
 };

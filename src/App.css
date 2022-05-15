@@ -3,7 +3,7 @@
   max-width: 0 auto;
   max-height: 0 auto;
   font-family: sans-serif;
-  background-color: black 
+  background-color: black;
 }
 
 .header {
@@ -74,10 +74,14 @@
 
   display: flex;
 }
+.charging {
+  color: white;
+}
 .b {
   padding-top: 2%;
   color: white;
   font-size: 77%;
+  cursor: pointer;
 }
 .container-character {
   max-width: 1213px;
@@ -85,37 +89,108 @@
 
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .steve-jobs {
   height: 500px;
   max-width: 255px;
   border: red solid 2px;
-  background-color:black;
-  margin-top: 3%;
-
+  background-color: black;
+  margin-top: 2%;
+  transition: all 0.3s;
+  border-radius: 4%;
+  margin-top:33px;
+}
+.steve-jobs:hover {
+  transform: scale(1.1);
 }
 .character-image {
   width: 100%;
- height: 60%;
+  height: 60%;
+  border-radius: 4%;
 }
 .description {
- width: 100%;
- height: 60%;
+  width: 100%;
+  height: 60%;
   height: 4px;
   color: white;
   font-size: 12px;
   padding-top: 4%;
+}
+.title {
+  color: white;
+}
+.Button-container {
+  display: flex;
+  color: aqua;
+  
+}
+.button-pagination {
+  color:white;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 
+  'Arial Narrow', Arial, sans-serif;
+}
+.button-pagination:disabled {
+  background-color: gray;
+}
+.barre-search {
+  background-color: white;
+  margin-left: 30%;
+  width: 40%;
+  margin-bottom: 1%;
+}
+.button-pagination:active {
+  background-color:brown;
+  transform: scale(1.2);
+}
+.div-reward {
+  max-width: 0 auto;
+  height: 23px;
+}
+.div-reward-inside {
+  max-width: 16%;
+  height: 16px;
+  display: flex;
+  margin-top: -1%;
+}
+.writing {
+  color: white;
+  font-size: 10px;
 
+  margin-left: 10%;
 }
-.title{
-    color: white;
+.insider-img {
+  height: 100%;
+  margin-left: 57%;
+  margin-top: -0, 1%;
 }
-.Button-container{
-    display: flex;
-    color: aqua;
+.Marvel-picture-container {
+  max-width: 0 auto;
+  height: 459px;
+  
+  margin-bottom: 23px;
 }
-.button{
-    color: brown;
+.picture-marvel {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.inside-picture {
+  background-color: transparent;
+  position: relative;
+  top: 200px;
+  max-width: 20%;
+  padding-left: 40%;
+  color: white;
+  font-size: 34px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.span-between{
+    color: rgb(223, 223, 223);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow',
+     Arial, sans-serif;
+     font-size: 13px;
+     margin-top: 3px;
 }
